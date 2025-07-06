@@ -1,13 +1,3 @@
-🤖 Penjelasan Bantuan AI
-Proyek ini dikembangkan dengan bantuan ChatGPT (OpenAI) dalam hal:
-
-Merancang struktur HTML & CSS.
-
-Membuat fungsi JavaScript untuk operasi CRUD.
-
-Membantu debugging dan menyederhanakan logika kode.
-
-Menjelaskan penggunaan localStorage dan cara memanipulasi DOM.
 # 📝 To-Do List Web App
 Aplikasi To-Do List sederhana berbasis web yang dibuat sebagai bagian dari proyek Capstone IBM.
 
