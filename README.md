@@ -2,7 +2,7 @@
 Aplikasi To-Do List berbasis web sederhana yang memungkinkan pengguna mencatat dan mengelola daftar tugas secara efisien. Dibuat sebagai bagian dari Capstone Project pada pelatihan Code Generations and Optimization with IBM Granite.
 
 ## 🚀 Deployment
-- ✅ Link aplikasi: https://capston-ibm.netlify.app
+- ✅ Link web aplikasi:  https://capston-ibm.vercel.app/
 - ✅ Repositori GitHub: https://github.com/Dewisrirahayu05/Capston_IBM
 
 ---
