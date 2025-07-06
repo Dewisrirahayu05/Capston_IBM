@@ -72,5 +72,5 @@ Link dari Vercel: https://capston-ibm.vercel.app
 ## AI Support Explanation
 Pengembangan proyek ini mendapatkan dukungan dari teknologi AI berikut:
 - ChatGPT (OpenAI) – membantu menyusun struktur HTML, CSS, JavaScript, debugging kode, parsing subtugas dengan regex, serta penulisan README.md.
-- IBM Granite AI – sempat digunakan untuk memberikan saran teknis dan pemecahan masalah pada tahap awal pengembangan, namun pengembangan selanjutnya dilanjutkan menggunakan bantuan dari ChatGPT karena hasil dan alurnya lebih sesuai dengan kebutuhan proyek.
+- IBM Granite AI – digunakan untuk memberikan saran teknis dan pemecahan masalah pada tahap awal pengembangan, namun pengembangan selanjutnya dilanjutkan menggunakan bantuan dari ChatGPT karena hasil dan alurnya lebih sesuai dengan kebutuhan proyek.
 Kombinasi keduanya memberikan pemahaman yang lebih baik dalam membangun aplikasi berbasis web yang sederhana namun fungsional.
