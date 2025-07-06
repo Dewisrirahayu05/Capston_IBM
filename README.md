@@ -2,8 +2,8 @@
 Aplikasi To-Do List sederhana berbasis web yang dibuat sebagai bagian dari proyek Capstone IBM.
 
 ## 🚀 Deployment
-✅ Link aplikasi: https://capston-ibm.netlify.app
-✅ Repositori GitHub: https://github.com/Dewisrirahayu05/Capston_IBM
+- ✅ Link aplikasi: https://capston-ibm.netlify.app
+- ✅ Repositori GitHub: https://github.com/Dewisrirahayu05/Capston_IBM
 
 ---
 
