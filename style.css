@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  text-align: center;
+  color: #007acc;
+  font-size: 28px;
+}
+
+textarea {
+    width: 75%;
+    padding: 50px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    font-size: 16px;
+}
+
+.add-btn {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  background: #007acc;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.add-btn:hover {
+  background-color: #005f99;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+li div strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+li ul.subtask {
+  padding-left: 20px;
+  margin: 5px 0 0 0;
+}
+
+li ul.subtask li {
+  background: none;
+  padding: 2px 0;
+  box-shadow: none;
+  margin: 0;
+}
+
+li button {
+  background: #007acc;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: 0.3s;
+}
+
+li button:hover {
+  background: #005f99;
+}

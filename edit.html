@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edit Tugas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Edit Tugas</h1>
+    <form id="editForm">
+      <label for="editTask">Edit tugas:</label><br>
+      <textarea id="editTask" rows="5" required></textarea>
+      <br><br>
+      <button type="submit">Save</button>
+      <a href="index.html" class="add-btn">Back</a>
+    </form>
+  </div>
+
+  <script>
+    // Ambil index tugas dari query parameter
+    const params = new URLSearchParams(window.location.search);
+    const index = params.get('index');
+
+    const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+
+    if (index !== null && tasks[index]) {
+      document.getElementById('editTask').value = tasks[index];
+    }
+
+    document.getElementById('editForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const updatedTask = document.getElementById('editTask').value.trim();
+      if (updatedTask) {
+        tasks[index] = updatedTask;
+        localStorage.setItem('tasks', JSON.stringify(tasks));
+        window.location.href = 'index.html';
+      }
+    });
+  </script>
+</body>
+</html>

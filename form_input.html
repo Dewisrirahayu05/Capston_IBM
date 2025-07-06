@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Tugas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add</h1>
+        <form id="taskForm">
+            <textarea id="newTask" placeholder="Masukkan tugas baru" required row="5"></textarea>
+            <button type="submit">Save</button>
+        </form>
+        <br>
+        <a href="index.html" class="add-btn">Back</a>
+    </div>
+
+    <script>
+        // Tangani saat form disubmit
+        document.getElementById("taskForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            const taskInput = document.getElementById("newTask");
+            const task = taskInput.value.trim();
+
+            if (task) {
+                // Ambil daftar tugas dari localStorage
+                let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+                
+                // Tambahkan tugas baru ke daftar
+                tasks.push(task);
+                
+                // Simpan kembali ke localStorage
+                localStorage.setItem("tasks", JSON.stringify(tasks));
+                
+                // Kosongkan input
+                taskInput.value = "";
+                
+                // Kembali ke halaman utama
+                window.location.href = "index.html";
+            }
+        })
+    </script>
+    
+</body>
+</html>
