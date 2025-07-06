@@ -1,5 +1,5 @@
 # 📝 To-Do List Web App
-Aplikasi To-Do List sederhana berbasis web yang dibuat sebagai bagian dari proyek Capstone IBM.
+Aplikasi To-Do List berbasis web sederhana yang memungkinkan pengguna mencatat dan mengelola daftar tugas secara efisien. Dibuat sebagai bagian dari Capstone Project pada pelatihan Code Generations and Optimization with IBM Granite.
 
 ## 🚀 Deployment
 - ✅ Link aplikasi: https://capston-ibm.netlify.app
@@ -9,17 +9,21 @@ Aplikasi To-Do List sederhana berbasis web yang dibuat sebagai bagian dari proye
 
 ## 📌 Description
 
-Aplikasi ini dirancang untuk memenuhi tugas akhir atau Capston Project Code Generations and Optimization with IBM Granite, memungkinkan pengguna mencatat dan mengelola daftar tugas. Tugas dapat memiliki subtugas, dan setiap entri dapat diedit atau dihapus. Data disimpan secara lokal di browser menggunakan `localStorage`.
+Proyek ini bertujuan untuk membangun sebuah aplikasi pengelolaan tugas harian (to-do list) yang sederhana namun fungsional, dengan antarmuka yang mudah digunakan dan penyimpanan data lokal. Permasalahan yang diangkat adalah bagaimana membuat aplikasi to-do list yang tetap bisa menyimpan data tanpa server backend, serta memiliki kemampuan edit dan subtugas yang fleksibel.
+
+Solusi yang ditawarkan adalah menggunakan HTML, CSS, dan JavaScript murni dengan LocalStorage API sehingga pengguna tetap bisa menyimpan data tanpa koneksi internet atau akun login. Proyek ini juga menjadi bukti pemahaman dalam penggunaan teknologi web dasar dan penerapan logika aplikasi dengan AI Support.
 
 ---
 
 ## 🛠️ Technologies Used
-
-- **HTML5** – struktur halaman
-- **CSS3** – styling dan layout
-- **JavaScript (vanilla)** – logika aplikasi (add, edit, delete, render)
-- **LocalStorage API** – menyimpan data tugas secara lokal di browser
-- **Vercel** – untuk deployment hosting 
+| Teknologi                | Fungsi                                       |
+| ------------------------ | -------------------------------------------- |
+| **HTML5**                | Struktur halaman aplikasi                    |
+| **CSS3**                 | Styling dan layout UI                        |
+| **JavaScript (Vanilla)** | Logika aplikasi (CRUD, rendering data)       |
+| **LocalStorage API**     | Menyimpan data tugas secara lokal di browser |
+| **Vercel**               | Platform deployment gratis dan cepat         |
+| **GitHub**               | Kontrol versi dan kolaborasi kode sumber     |
 
 ---
 
@@ -27,39 +31,43 @@ Aplikasi ini dirancang untuk memenuhi tugas akhir atau Capston Project Code Gene
 - Menambahkan tugas baru beserta sub-tugasnya.
 - Mengedit dan memperbarui tugas yang sudah dibuat.
 - Menghapus tugas langsung dari halaman utama.
-- Data tersimpan secara permanen di browser menggunakan localStorage.
-- - Tampilan bersih dan responsif
+- Data tersimpan secara permanen di browser tanpa database.
+- Tampilan bersih, responsif, dan mudah digunakan
+
+### Cara kerja fitur:
+- Tugas disimpan dalam array tasks[] dan diserialisasi ke localStorage.
+- Subtugas diparsing otomatis berdasarkan pola regex (1. subtask, 2. subtask).
+- Semua interaksi (tambah/edit/hapus) langsung memperbarui UI dan storage.
 
 ---
 
 ## 🧑‍💻 Setup Instructions
-Clone repositori:
-
-bash
-Salin
-Edit
+1. Clone repositori:
 git clone https://github.com/Dewisrirahayu05/Capston_IBM.git
-Masuk ke folder proyek:
 
-bash
-Salin
-Edit
+2. Masuk ke folder proyek:
 cd Capston_IBM
-Buka file index.html menggunakan browser atau fitur Live Server (misalnya dari VSCode).
 
-Deploy Menggunakan Vercel:
-1. Buka https://vercel.com dan login pakai GitHub.
-2. Upload project ke GitHub (kalau belum):
-3. Buka GitHub
-4. Klik “New repository”
-5. Buat repo dan upload semua file (index.html, dll)
+3. Jalankan di browser:
+Buka file index.html langsung di browser, atau Gunakan ekstensi Live Server (VS Code) untuk menjalankan lokal
 
-Balik ke Vercel:
-1. Klik "New Project"
-2. Pilih repo GitHub kamu
-3. Vercel akan otomatis mengenali sebagai project HTML
-4. Klik Deploy
-5. Setelah selesai, kamu akan dapat link publik (pilih link yang ada di bagian domains)
+4. Deploy ke Vercel:
+- Pastikan semua file sudah diupload ke GitHub
+Contoh:
+✅ https://github.com/Dewisrirahayu05/Capston_IBM)
+
+- Masuk ke https://vercel.com dan login dengan akun GitHub
+
+- Klik tombol "New Project"
+
+- Pilih repository Capston_IBM (nama repository di github)
+
+- Vercel akan otomatis mengenali sebagai proyek HTML static
+
+- Klik "Deploy"
+
+- Setelah proses selesai, kamu akan mendapatkan link deploy publik
+Link dari Vercel: https://capston-ibm.vercel.app
 
 ## AI Support Explanation
 Pengembangan proyek ini mendapatkan dukungan dari teknologi AI berikut:
